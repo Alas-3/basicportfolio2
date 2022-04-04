@@ -1,0 +1,151 @@
+<!<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ohayoooo!</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <style>
+        body {
+            background-image: url('gifbackground.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        .p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 20px;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        a:hover {
+            color: orangered;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        header {
+            filter: blur();
+        }
+        
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        nav {
+            float: center
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-left: 70px;
+            padding-top: 23px;
+            position: relative;
+        }
+        
+        a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: aqua;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 300ms;
+        }
+        
+        a:hover::before {
+            width: 100%;
+        }
+        
+        .social-icon {
+            color: black;
+            transition: 0.2s;
+            margin: 0 20px;
+        }
+        
+        .social-icon:hover {
+            color: orangered;
+        }
+        
+        .social-icon::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: aqua;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 1000ms;
+        }
+        
+        ion-icon {
+            font-size: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="homepage.html"><b>Home</b></a></li>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="address.html"><b>Address</b></a></li>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="education.html"><b>Educational Background</b></a></li>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="collegeprofile.html"><b>Mission & Vision</b></a></li>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="socials.html"><b>Socials</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 35px; padding-top: 150px;">Here are my socials!</h1>
+        <center>
+            <a class="social-icon" href="https://www.facebook.com/ace.labador.3" target="_blank">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://twitter.com/Ac3Labador" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/ac3labador/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+        </center>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </div>
+</body>
+
+
+</html>

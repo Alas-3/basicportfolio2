@@ -1,0 +1,167 @@
+<!<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ohayoooo!</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <style>
+        body {
+            background-image: url('gifbackground.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        
+        .p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 20px;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+        a:hover {
+            color: orangered;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        header {
+            filter: blur();
+        }
+        
+        header::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        nav {
+            float: center
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-left: 70px;
+            padding-top: 23px;
+            position: relative;
+        }
+        
+        a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: aqua;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 300ms;
+        }
+        
+        a:hover::before {
+            width: 100%;
+        }
+        
+        .secondpage {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            width: 100%;
+            height: 50%;
+        }
+        
+        .p2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 25px;
+        }
+        
+        ion-icon {
+            font-size: 50px;
+            text-align: center;
+        }
+        
+        .social-icon {
+            color: black;
+            transition: 0.2s;
+            margin: 0 20px;
+        }
+        
+        .social-icon:hover {
+            color: orangered;
+        }
+        
+        .social-icon::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background-color: aqua;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 1000ms;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="homepage.html"><b>Home</b></a></li>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="address.html"><b>Address</b></a></li>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="education.html"><b>Educational Background</b></a></li>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="collegeprofile.html"><b>Mission & Vision</b></a></li>
+                    <li style=" font-family: Arial, Helvetica, sans-serif;
+            color: black; font-size: 20px;"><a href="socials.html"><b>Socials</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: black; padding-top: 60px;">Our Lady of Fatima University</h1>
+        <center>
+            <a class="social-icon" href="http://www.fatima.edu.ph/discover/history/" target="_blank">
+                <ion-icon name="school"></ion-icon>
+            </a>
+        </center>
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: black;">Mission & Vision</h1>
+        <div class="secondpage">
+            <h3 class="p2"><u>Mission</u></h3>
+            <p class="p2"><b>The College of Computer Studies aims to provide innovative and quality instruction to the advancement of technology, intends to develop an entrepreneurial learning environment towards sustainability and growth; and develops responsible and morally upright citizens.</b></p>
+            <h3 class="p2"><u>Vision</u></h3>
+            <p class="p2"><b>We are committed to provide accessible, responsive, and quality Information Technology Education (ITE) programs and to become the Institution of choice in producing competent and responsible IT professionals who are sensitive to the needs and demands of the industry</b></p>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </div>
+</body>
+</div>
+</body>
+
+
+</html>
