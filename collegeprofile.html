@@ -1,4 +1,4 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
@@ -11,6 +11,16 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
+        }
+        
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            overflow-y: scroll;
+        }
+        
+        body::-webkit-scrollbar {
+            display: none;
         }
         
         .p {
@@ -95,6 +105,13 @@
             font-size: 25px;
         }
         
+        .mv {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 30px;
+        }
+        
         ion-icon {
             font-size: 50px;
             text-align: center;
@@ -126,25 +143,25 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li style=" font-family: Arial, Helvetica, sans-serif;
+        <center>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li style=" font-family: Arial, Helvetica, sans-serif;
             color: black; font-size: 20px;"><a href="homepage.html"><b>Home</b></a></li>
-                    <li style=" font-family: Arial, Helvetica, sans-serif;
-            color: black; font-size: 20px;"><a href="address.html"><b>Address</b></a></li>
-                    <li style=" font-family: Arial, Helvetica, sans-serif;
+                        <li style=" font-family: Arial, Helvetica, sans-serif;
             color: black; font-size: 20px;"><a href="education.html"><b>Educational Background</b></a></li>
-                    <li style=" font-family: Arial, Helvetica, sans-serif;
+                        <li style=" font-family: Arial, Helvetica, sans-serif;
             color: black; font-size: 20px;"><a href="collegeprofile.html"><b>Mission & Vision</b></a></li>
-                    <li style=" font-family: Arial, Helvetica, sans-serif;
+                        <li style=" font-family: Arial, Helvetica, sans-serif;
             color: black; font-size: 20px;"><a href="socials.html"><b>Socials</b></a></li>
-                </ul>
-            </nav>
-        </div>
+                    </ul>
+                </nav>
+            </div>
+        </center>
     </header>
     <div>
-        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: black; padding-top: 60px;">Our Lady of Fatima University</h1>
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: black; padding-top: 15px;">Our Lady of Fatima University</h1>
         <center>
             <a class="social-icon" href="http://www.fatima.edu.ph/discover/history/" target="_blank">
                 <ion-icon name="school"></ion-icon>
@@ -152,9 +169,9 @@
         </center>
         <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; color: black;">Mission & Vision</h1>
         <div class="secondpage">
-            <h3 class="p2"><u>Mission</u></h3>
+            <h3 class="mv"><u>Mission</u></h3>
             <p class="p2"><b>The College of Computer Studies aims to provide innovative and quality instruction to the advancement of technology, intends to develop an entrepreneurial learning environment towards sustainability and growth; and develops responsible and morally upright citizens.</b></p>
-            <h3 class="p2"><u>Vision</u></h3>
+            <h3 class="mv"><u>Vision</u></h3>
             <p class="p2"><b>We are committed to provide accessible, responsive, and quality Information Technology Education (ITE) programs and to become the Institution of choice in producing competent and responsible IT professionals who are sensitive to the needs and demands of the industry</b></p>
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
